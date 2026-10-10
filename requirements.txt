@@ -1,4 +1,5 @@
-openai
 streamlit
 python-dotenv
 pypdf
+google-genai
+scikit-learn
