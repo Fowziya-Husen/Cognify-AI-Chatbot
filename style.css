@@ -1,0 +1,231 @@
+
+/* =================================
+   COGNIFY — AI WORKSPACE THEME
+   ================================= */
+
+   :root {
+    --navy: #101329;
+    --navy-soft: #191d3a;
+    --purple: #7464f5;
+    --purple-light: #eeebff;
+    --ink: #ffffff;
+    --muted: #7b8198;
+    --border: #e8e9f2;
+    --surface: #ffffff;
+    --canvas: #191d3a;
+    ;
+}
+
+/* App background */
+.stApp {
+    background: var(--canvas);
+    color: var(--ink);
+}
+
+/* Main content */
+.block-container {
+    max-width: 1050px;
+    padding-top: 2.5rem;
+    padding-bottom: 7rem;
+}
+
+/* Typography */
+html, body, [class*="css"] {
+    font-family: Inter, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", sans-serif;
+}
+
+h1 {
+    color: var(--ink) !important;
+    font-size: 2.65rem !important;
+    font-weight: 750 !important;
+    letter-spacing: -1.5px;
+    line-height: 1.15;
+}
+
+h2, h3 {
+    color: var(--ink) !important;
+    font-weight: 650 !important;
+    letter-spacing: -0.4px;
+}
+
+p, li {
+    line-height: 1.7;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: var(--navy);
+    border-right: 1px solid #272a46;
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 1.6rem;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    color: #e9eafa;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: #aeb3d0;
+}
+
+/* Sidebar uploader */
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] {
+    background: var(--navy-soft);
+    border: 1px dashed #4d5078;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+/* Main buttons */
+.stButton > button {
+    min-height: 42px;
+    border-radius: 11px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 600;
+    transition: border-color 0.2s ease,
+                background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.stButton > button:hover {
+    border-color: var(--purple);
+    background: var(--purple-light);
+    color: #191d3a;
+    transform: translateY(-1px);
+}
+
+/* Primary buttons */
+.stButton > button[kind="primary"] {
+    background: var(--purple);
+    color: white;
+    border-color: var(--purple);
+}
+
+.stButton > button[kind="primary"]:hover {
+    background: #5e4de2;
+    color: white;
+}
+
+/* Chat message surfaces */
+div[data-testid="stChatMessage"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 18px #191d3a;
+}
+
+/* Avatar corners */
+div[data-testid="stChatMessageAvatar"] {
+    border-radius: 12px;
+}
+
+/* Chat input */
+div[data-testid="stChatInput"] {
+    border-radius: 16px;
+}
+
+div[data-testid="stChatInput"] > div {
+    border: 1px solid #dedff0;
+    border-radius: 16px;
+    background: #191d3a;
+    box-shadow: 0 6px 24px rgba(32, 36, 59, 0.06);
+}
+
+div[data-testid="stChatInput"] textarea {
+    color: var(--ink);
+}
+
+/* File uploader in main content */
+div[data-testid="stFileUploader"] {
+    background: white;
+    border: 1px dashed #c9c5fa;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+/* Alerts and expanders */
+div[data-testid="stAlert"] {
+    border-radius: 13px;
+}
+
+div[data-testid="stExpander"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+}
+
+/* Captions */
+div[data-testid="stCaptionContainer"] {
+    color: var(--muted);
+}
+
+/* Dividers */
+hr {
+    border-color: var(--border);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4d6e5;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .block-container {
+        padding: 1.2rem 1rem 6rem;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    div[data-testid="stChatMessage"] {
+        padding: 12px;
+    }
+}
+
+
+/* Fix chat message text contrast */
+div[data-testid="stChatMessage"] {
+    color: #20243b !important;
+    background: #ffffff !important;
+}
+
+/* Main text and paragraphs inside chat messages */
+div[data-testid="stChatMessage"] p,
+div[data-testid="stChatMessage"] li,
+div[data-testid="stChatMessage"] span,
+div[data-testid="stChatMessage"] strong,
+div[data-testid="stChatMessage"] em {
+    color: #20243b !important;
+}
+
+/* Headings inside chat messages */
+div[data-testid="stChatMessage"] h1,
+div[data-testid="stChatMessage"] h2,
+div[data-testid="stChatMessage"] h3 {
+    color: #20243b !important;
+}
+
+/* Code blocks inside messages */
+div[data-testid="stChatMessage"] pre,
+div[data-testid="stChatMessage"] code {
+    color: #fbfcff !important;
+}
