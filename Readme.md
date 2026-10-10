@@ -4,6 +4,14 @@ Cognify is an AI-powered chatbot assistant built with Python, Streamlit, and the
 
 The project demonstrates practical applications of Large Language Models (LLMs), prompt engineering, document processing, and Retrieval-Augmented Generation (RAG).
 
+## 🚀 Live Demo
+
+Try Cognify online: **[Launch Cognify AI Chatbot](https://cognify-ai-chatbot.streamlit.app/)**
+
+## 💻 GitHub Repository
+
+Explore the source code: [Cognify-AI-Chatbot](https://github.com/Fowziya-Husen/Cognify-AI-Chatbot)
+
 ## Features
 
 - **AI Chat:** Interact with Google's Gemini model to get responses to general questions.
