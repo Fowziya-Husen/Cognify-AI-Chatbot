@@ -62,8 +62,8 @@ The `.env` file stores the Gemini API key locally and should never be uploaded t
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Fowziya-Husen/Genai-Chatbot.git
-cd Genai-Chatbot
+git clone https://github.com/Fowziya-Husen/Cognify-AI-Chatbot.git
+cd Cognify-AI-Chatbot
 ```
 
 ### 2. Create a Virtual Environment
