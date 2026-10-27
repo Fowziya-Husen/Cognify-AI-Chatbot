@@ -140,7 +140,4 @@ This project explores:
 - Building an interactive application with Streamlit
 - Managing API credentials using environment variables
 
-## Author
-
-**Fowziya H**
 
