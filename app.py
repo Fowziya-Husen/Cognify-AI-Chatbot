@@ -30,7 +30,7 @@ st.set_page_config(
 )
 
 API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.6-flash"
 
 if not API_KEY:
     st.error("GEMINI_API_KEY is missing. Check your .env file.")
